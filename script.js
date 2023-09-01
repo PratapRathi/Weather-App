@@ -89,7 +89,7 @@ function weatherIMG(elem,texture){
 }
 
 
-// getWeather(currentCity);
+getWeather(currentCity);
 
 //New Weather Search
 let searchInput= document.getElementById("text-input");
