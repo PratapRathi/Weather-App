@@ -1,0 +1,43 @@
+:root{
+    --main-bg-color: #1e202b;
+    --main-content-color: #fff;
+    --bg-light: #323544;
+    --bg-dark: #262936;
+    --bg-header: rgba(0, 0, 0, 0.1);
+    --color-light: #bfc1c8;
+}
+
+.flex{
+    display: flex;
+}
+.m-0{
+    margin-left: 10px;
+}
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1170px;
+}
+
+.toggle{
+    display: flex;
+}
+
+.bg-header{
+    background-color: var(--bg-header);
+}
+.bg-dark{
+    background-color: var(--bg-dark);
+}
+.bg-light{
+    background-color: var(--bg-light);
+}

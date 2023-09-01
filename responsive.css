@@ -1,0 +1,53 @@
+@media screen and (min-width: 1200px){
+.container {
+    width: 1170px;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+.container {
+    width: 970px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+.container {
+    width: 750px;
+}
+}
+
+@media screen and (max-width: 767px){
+    .container {
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        display: none;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    
+    .hamburger{
+        visibility: visible;
+    }
+    .weather{
+        flex-direction: column;
+    }
+    .today-weather, .forcast-weather{
+        width: 100%;
+    }
+    .forcast .day{
+        font-size: 0.5rem;
+    }
+    .max-temp{
+        font-size: 1rem;
+    }
+    .min-temp{
+        font-size: 0.5rem;
+    }
+}

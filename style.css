@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+
+/* Navbar */
+
+nav{
+    background-color: var(--main-bg-color);
+    color: var(--main-content-color);
+    position: relative;
+}
+nav::after{
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    background-image: url(img/kuala-lumpur-1820944.jpg);
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    z-index: -5;
+}
+
+nav .container{
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+nav ul{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--main-content-color);
+    padding: 0 14px;
+    margin: 0 5px;
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 22px;
+    border: 2px solid transparent;
+}
+#home{
+    color: #009ad8;
+    border-color: #009ad8;
+}
+nav ul li a:hover{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.hamburger{
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    color: var(--main-content-color);
+    visibility: hidden;
+}
+
+/* Search input */
+.search form{
+    width: 100%;
+    position: relative;
+    margin: 70px 0;
+}
+.container form .text-input{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: var(--main-bg-color);
+    color: var(--main-content-color);
+    border-radius: 30px;
+}
+.container form .btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 30px;
+    background: #009ad8;
+    color: var(--main-content-color);
+    cursor: pointer;
+}
+
+/* Weather Banner */
+.weather{
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.today-weather{
+    height: 285px;
+    width: 36%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+.today-header{
+    height: 14%;
+    display: flex;
+    color: var(--color-light);
+    justify-content: space-between;
+    align-items: center;
+}
+.today-main{
+    height: 86%;
+    justify-content: space-around;
+    color: var(--color-light);
+}
+.today-header .day, .today-header .date{
+    margin: 0 10px;
+}
+.temperature{
+    justify-content: space-around;
+}
+.temperature .temp{
+    font-size: 6rem;
+}
+
+.wind-data span, .city{
+    padding: 0 14px;
+}
+.forcast-weather{
+    width: 64%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.forcast{
+    color: var(--color-light);
+    /* border: 1px solid #fff; */
+}
+
+.forcast .day{
+    height: 14%;
+}
+.weather-data{
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.weather-data img{
+    height: 20%;
+    margin: 10% 0;
+}
+.t-temp{
+    margin: 10% 0;
+}
+.max-temp{
+    font-size: 2rem;
+    margin: 5px 0;
+}

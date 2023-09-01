@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class=" flex f-center">
+        <div class="container flex">
+            <div class="logo flex f-center">
+                <img src="img/logo.png" alt="logo">
+                <!-- <span>W-App</span> -->
+            </div>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Photos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Search input -->
+    <div class="main flex-col f-center">
+        <div class="container search">
+            <form action="#" class="find-location">
+                <input id="text-input" type="text" class="text-input" placeholder="Find your location...">
+                <input id="btn" type="submit" class="btn" value="Find">
+            </form>
+        </div>
+        <!-- Weather Banner -->
+        <div class="container weather bg-light">
+            <div class="today-weather">
+                <div class="today-header bg-header">
+                    <div class="day"></div>
+                    <div id="date" class="date"></div>
+                </div>
+                <div class="today-main flex-col">
+                    <div id="city" class="city"></div>
+                    <div class="temperature flex">
+                        <div id="current-temp" class="temp"></div>
+                        <img id="current-weather-img" src="img/sunny.svg" width="90" alt="">
+                    </div>
+                    <div class="wind-data flex">
+                        <img class="m-0" src="img/icon/icon-umberella.png" alt="">
+                        <span id="humid" class="f-center"></span>
+                        <img class="m-0" src="img/icon/icon-wind.png" alt="">
+                        <span id="wind-speed" class="f-center"></span>
+                        <img class="m-0" src="img/icon/icon-compass.png" alt="">
+                        <span id="wind-direction" class="f-center"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="forcast-weather">
+                <div class="forcast bg-dark">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forcast">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forcast bg-dark">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forcast">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forcast bg-dark">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forcast">
+                    <div class="day bg-header flex-col f-center">Monday</div>
+                    <div class="weather-data flex-col">
+                        <img class="forcast-img" src="img/sunny.svg" alt="">
+                        <div class="t-temp flex-col f-center">
+                            <span class="max-temp">23°C</span>
+                            <span class="min-temp">18°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/2e9a7f12bc.js" crossorigin="anonymous"></script>
+</html>
