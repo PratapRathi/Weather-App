@@ -22,9 +22,6 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    nav{
-        max-height: 50px;
-    }
     nav::after{
         top: 50px;
     }
