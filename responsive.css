@@ -22,6 +22,12 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    nav{
+        max-height: 50px;
+    }
+    nav::after{
+        top: 50px;
+    }
     nav ul{
         flex-direction: column;
         width: 100%;

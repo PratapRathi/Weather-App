@@ -42,7 +42,7 @@ async function getWeather(city){
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '4c22a1ab56msh7b02867ebcd08f2p1d36b0jsnd22cc0170fa6',
+		'X-RapidAPI-Key': 'e88a107a68msh69116ef80ad7297p180f1djsn1ca060e8c5e3',
 		'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
 	}
 };
