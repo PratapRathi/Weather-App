@@ -7,7 +7,6 @@ hamburger.addEventListener('click', ()=>{
 
 
 
-
 // Setting Current Date & Time
 let day= document.querySelectorAll('.day');
 let dateElem = document.getElementById('date') 
@@ -27,16 +26,18 @@ day.forEach((e)=>{
 dateElem.textContent= cDate + month[cMonth];
 
 
-
+// Variables to target HTML Elements
 let cityElem= document.getElementById("city");
 let humid= document.getElementById("humid");
 let windSpeed= document.getElementById("wind-speed");
 let windDirection= document.getElementById("wind-direction");
 let currentTemp= document.getElementById("current-temp");
 let currentTempIMG= document.getElementById("current-weather-img");
-
 let currentCity= "Meerut";
 
+
+
+// Function to get Live weather Backend API and Update it on Frontend side
 async function getWeather(city){
     const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${city}&format=json&u=f`;
 const options = {
@@ -89,7 +90,10 @@ function weatherIMG(elem,texture){
 }
 
 
+// Calling getWeather() function for initial render
 getWeather(currentCity);
+
+
 
 //New Weather Search
 let searchInput= document.getElementById("text-input");
@@ -97,4 +101,5 @@ let searchButton= document.getElementById("btn");
 searchButton.addEventListener('click',(e)=>{
     e.preventDefault();
     getWeather(searchInput.value);
+    searchInput.value = "";
 })
